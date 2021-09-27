@@ -1,0 +1,261 @@
+/** 
+@author kyrie
+该文件是button的css样式文件，里面包含了所有的button样式
+*/
+
+.i__button{
+    display:inline-block;  /** 行内块元素*/
+    line-height:1;       /** 行间距为1*/
+    white-space:nowrap;       /** 规定段落中的文本不进行换行*/
+    cursor:pointer;           /**光标呈现为指示链接的指针*/
+    background:#fff;border:1px solid #bfcbd9;
+    color:#1f2d3d;-webkit-appearance:none;
+    text-align:center;
+    box-sizing:border-box;
+    outline:0;
+    margin:0;
+    border-radius:4px;  /** 边框四角弧度*/
+    padding:12px 20px;           /**填充大小*/
+    font-size:14px;        /** 文字大小*/
+    margin-left: 10px;
+}
+
+/**圆角按钮样式*/
+.i__button.is-round{
+    border-radius:20px
+}
+
+
+/**中等型号按钮样式*/
+.i__button--size-medium{
+    padding:10px 20px;
+    font-size:14px;
+    border-radius:4px
+}
+
+
+
+/**小型号按钮样式*/
+.i__button--size-small{
+    padding:9px 15px;
+    font-size:12px;
+    border-radius:3px
+}
+
+
+/** 初始化按钮样式*/
+.i__button--default{
+    background:#fff;
+    border:1px solid #bfcbd9;
+    color:#1f2d3d
+}
+
+
+/**按钮悬停样式*/
+.i__button--default:focus,.i__button--default:hover{
+    background:rgba(63,170,245,.05);
+    border-color:rgba(63,170,245,.8);
+    color:#3FAAF5
+}
+
+/**按钮禁用状态样式*/
+.i__button--default:disabled{
+    opacity:.3;
+    background:#fff;
+    border:1px solid #bfcbd9;
+    color:#1f2d3d}
+
+
+/**点击基础状态*/    
+.i__button--default:active{
+    background:#fff;
+    outline:0
+}
+
+/**朴素按钮基础样式*/
+.i__button--default.is-plain{
+    border:1px solid #3FAAF5
+}
+
+/**朴素按钮悬停样式*/
+.i__button--default.is-plain:focus,.i__button--default.is-plain:hover{
+    background:#fff;
+    border-color:rgba(63,170,245,.8);
+    color:#3FAAF5
+}
+
+/**基础按钮 禁用样式*/
+.i__button--default.is-plain:disabled{
+    background:#fff;
+    border:1px solid #3FAAF5;
+    color:#1f2d3d
+}
+
+/**初级按钮样式*/
+.i__button--primary{
+    background:#409eff;
+    border:1px solid #409eff;
+    color:#fff
+}
+
+/**初级按钮悬停样式*/
+.i__button--primary:focus,.i__button--primary:hover{
+    opacity:.7
+}
+
+/** 初级按钮禁用状态样式*/
+.i__button--primary:disabled{
+    opacity:.3
+}
+
+
+/** 初级按钮 朴素样式*/
+.i__button--primary.is-plain{
+    background:#fff;
+    border-color:#dcdfe6;
+    color:#606266
+}
+
+
+/**初级按钮 悬停 点击样式*/
+.i__button--primary.is-plain:focus,.i__button--primary.is-plain:hover{
+    opacity:1;
+    background:#3FAAF5;
+    border:1px solid #3FAAF5;
+    color:#fff
+}
+
+/**初级按钮 朴素 禁用状态*/
+.i__button--primary.is-plain:disabled{
+    opacity:.3;
+    background:rgba(63,170,245,.05);
+    border-color:rgba(63,170,245,.8);
+    color:#3FAAF5
+}
+
+/**默认成功按钮样式*/
+.i__button--success{
+    background:#67c23a;
+    border:1px solid #67c23a;
+    color:#fff
+}
+
+.i__button--success:focus,.i__button--success:hover{
+    opacity:.7 /**设置不透明级别*/
+}
+
+
+/**成功 禁用按钮样式*/
+.i__button--success:disabled{
+    opacity:.3
+}
+
+
+/**成功 朴素按钮*/
+.i__button--success.is-plain{
+    background:rgba(19,206,102,.05);
+    border-color:rgba(19,206,102,.8);
+    color:#13ce66
+}
+
+.i__button--success.is-plain:focus,.i__button--success.is-plain:hover{
+    opacity:1;
+    background:#13ce66;
+    border:1px solid #13ce66;
+    color:#fff
+}
+.i__button--success.is-plain:disabled{
+    opacity:.3;
+    background:rgba(19,206,102,.05);
+    border-color:rgba(19,206,102,.8);
+    color:#13ce66
+}
+
+/**信息按钮样式*/
+.i__button--info{
+    background:#909399;
+    border:1px solid #909399;
+    color:#fff
+}
+.i__button--info:focus,.i__button--info:hover{
+    opacity:.7
+}
+.i__button--info:disabled{
+    opacity:.3
+}
+
+/**  　信息按钮 朴素按钮*/
+.i__button--info.is-plain{
+    background:#f4f4f5;
+    border-color:#d3d4d6;color:#909399
+}
+.i__button--info.is-plain:focus,.i__button--info.is-plain:hover{
+    opacity:1;
+    background:#50bfff;
+    border:1px solid #50bfff;
+    color:#fff}
+
+.i__button--info.is-plain:disabled{
+    opacity:.3;
+    background:rgba(80,191,255,.05);
+    border-color:rgba(80,191,255,.8);
+    color:#50bfff
+}
+.i__button--warning{
+    background:#f7ba2a;
+    border:1px solid #f7ba2a;
+    color:#fff
+}
+.i__button--warning:focus,.i__button--warning:hover{
+    opacity:.7
+}
+.i__button--warning:disabled{
+    opacity:.3
+}
+.i__button--warning.is-plain{
+    background:rgba(247,186,42,.05);
+    border-color:rgba(247,186,42,.8);
+    color:#f7ba2a
+}
+.i__button--warning.is-plain:focus,.i__button--warning.is-plain:hover{
+    opacity:1;
+    background:#f7ba2a;
+    border:1px solid #f7ba2a;
+    color:#fff
+}
+.i__button--warning.is-plain:disabled{
+    opacity:.3;
+    background:rgba(247,186,42,.05);
+    border-color:rgba(247,186,42,.8);
+    color:#f7ba2a
+}
+
+/**危险按钮样式*/
+.i__button--danger{
+    background:#f56c6c;
+    border:1px solid #f56c6c;
+    color:#fff
+}
+.i__button--danger:focus,.i__button--danger:hover{
+    opacity:.7
+}
+.i__button--danger:disabled{
+    opacity:.3
+}
+.i__button--danger.is-plain{
+    background:#fef0f0;
+    border-color:#fbc4c4;
+    color:#f56c6c
+}
+.i__button--danger.is-plain:focus,.i__button--danger.is-plain:hover{
+    opacity:1;
+    background:#ff4949;
+    border:1px solid #ff4949;
+    color:#fff
+}
+.i__button--danger.is-plain:disabled{
+    opacity:.3;
+    background:rgba(255,73,73,.05);
+    border-color:rgba(255,73,73,.8);
+    color:#ff4949
+}
