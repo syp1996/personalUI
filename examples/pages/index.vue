@@ -7,8 +7,8 @@
     </div>
     <div class="separate-panel">
       <div class="about">
-        <router-link :to="{name: 'giud'}">开始使用</router-link>
-        <a target="_blank" class="btn-github" href="https://github.com/VV-UI/VV-UI">GitHub</a>
+        <router-link :to="{name: 'giud'}">开始使用</router-link> <!-- 跳转向组件页面 -->
+        <a target="_blank" class="btn-github" href="https://github.com/syp1996/personalUI">GitHub</a>
       </div>
     </div>
   </div>

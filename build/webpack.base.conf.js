@@ -18,7 +18,7 @@ const vueMarkdown = {
     //  但是markdown-it 有个bug fence整合attr的时候直接加载class数组上而不是class的值上
     //  markdown-it\lib\renderer.js 71行 这么修改可以修复bug
     //  tmpAttrs[i] += ' ' + options.langPrefix + langName; --> tmpAttrs[i][1] += ' ' + options.langPrefix + langName;
-    // const fence = MarkdownIt.renderer.rules.fence 
+    // const fence = MarkdownIt.renderer.rules.fence
     // MarkdownIt.renderer.rules.fence = function(...args){
     //   args[0][args[1]].attrJoin('class', 'hljs')
     //   var a = fence(...args)
@@ -80,15 +80,15 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
-        enforce: 'pre',
-        include: [resolve('examples'), resolve('test')],
-        options: {
-          formatter: require('eslint-friendly-formatter')
-        }
-      },
+      // {
+      //   test: /\.(js|vue)$/,
+      //   loader: 'eslint-loader',
+      //   enforce: 'pre',
+      //   include: [resolve('examples'), resolve('test')],
+      //   options: {
+      //     formatter: require('eslint-friendly-formatter')
+      //   }
+      // },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
